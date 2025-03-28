@@ -1,0 +1,10 @@
+# build dir
+*/build
+
+# dumps
+*.asc
+*.bin
+*.blif
+*.json
+*.rpt
+*.ys
