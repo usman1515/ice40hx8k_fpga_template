@@ -6,6 +6,7 @@ The iCE40HX8K-EVB is a low cost development board for iCE40 FPGA family from Lat
 The fun fact about this family of FPGAs is a complete end to end FOSS toolchain.
 For detailed specs on the board check out the main [webpage](https://www.olimex.com/Products/FPGA/iCE40/iCE40HX8K-EVB/open-source-hardware).
 
+
 ### Features
 
 - iCE40HX8K-CT256 FPGA 7680 Logic cells, 960 LABs, 128 K embedded RAM bits
@@ -88,19 +89,13 @@ The iCE40HX8K has a programming connector (PGM1) wil pin connection labelled lik
 ![programming controller schematic](https://www.olimex.com/wiki/images/f/f8/ICE40PGM.jpg)
 
 ```
-ICE40
-  │
-  │ PCB
-  │     ┌──┐
-  │ SSB │··│ SCK
-  │ SDO │··│ SDI
-  │CRST │··  CDONE
-  │ TXD │··│ RXD
-  │ GND │··│ 3.3V
-  │     └──┘
-  │ Power
-  │  Jack
-  └─────────────────
+       ┌──┐
+   SSB │··│ SCK
+   SDO │··│ SDI
+  CRST │··  CDONE
+   TXD │··│ RXD
+   GND │··│ 3.3V
+       └──┘
 ```
 
 Connect the FT232H to the iCE40HX8K-EVB like so.
@@ -121,16 +116,32 @@ Connect the FT232H to the iCE40HX8K-EVB like so.
 After this connect the FT232H to the computer via USB C. If everything is OK the green LED on the
 iCE40HX8K-EVB should be turned ON now.
 
+You can check if FT232H is available by running the command: `lsusb`.
+
+![olimex board](./images/olimex_board_setup.jpeg)
+
 ## Programming the iCE40HX8K
 
-### Synthesis
+The repository contains the following examples
 
-### Place and Route
+| Folder | Description |
+| :-- |:-- |
+| led_blink | sequentially blink LED1 and LED2 on the board. |
+| vga_demo1 | displays a small dot on the centre of the screen. |
+| led_blinking | sequentially blink 8 LEDs on the PMODs. |
 
-### Uploading a binary
+To run any of the demos mentioned above move into the particular project directory and run the
+Makefile targets.
 
-## Sources
+- Synthesis:            `make synthesis`
+- Place and Route:      `make implementation`
+- Bitstream generation: `make bitstream`
+- Upload bitstream:     `make upload`
 
-- [1](https://github.com/plex1/raspice40)
-- [2](https://hedmen.org/icestorm-doc/icestorm.html#Pin-mappings)
-- [3](https://ihateyour.cloud/post/20200604-1.html)
+
+
+<!-- ## Sources -->
+<!-- - [1](https://github.com/plex1/raspice40) -->
+<!-- - [2](https://hedmen.org/icestorm-doc/icestorm.html#Pin-mappings) -->
+<!-- - [3](https://ihateyour.cloud/post/20200604-1.html) -->
+<!-- - [4](https://bitbucket.org/cocoacrumbselectronics/ice40hx1k-evb-demo/src/master/) -->
