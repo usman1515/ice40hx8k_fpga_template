@@ -11,6 +11,9 @@
 ## ---------- Clock
 # set_io clk J3           # GBIN6
 
+## ---------- Reset
+# set_io resetq A16       # RESET
+
 ## ---------- Push Buttons
 # set_io button_1 K11     # BUT1
 # set_io button_2 P13     # BUT2
