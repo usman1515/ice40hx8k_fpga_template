@@ -34,11 +34,24 @@
 # set_io gpio_08 G5       # PIO3_08
 # set_io gpio_09 D1       # PIO3_09
 
+# set_io gpio_10 G4       # PIO3_10
+# set_io gpio_11 E3       # PIO3_11
+# set_io gpio_12 H5       # PIO3_12
+# set_io gpio_13 E2       # PIO3_13
+# set_io gpio_14 G3       # PIO3_14
+# set_io gpio_15 F3       # PIO3_15
+# set_io gpio_16 H3       # PIO3_16
+# set_io gpio_17 F2       # PIO3_17
+# set_io gpio_18 H6       # PIO3_18
+# set_io gpio_19 F1       # PIO3_19
+
+# set_io gpio_20 H4       # PIO3_20
+# set_io gpio_21 G2       # PIO3_21
+# set_io gpio_22 J4       # PIO3_22
 # set_io gpio_23 H2       # PIO3_23
 # set_io gpio_24 J5       # PIO3_24
-# set_io gpio_25 G1       # PIO3_25
-# set_io gpio_28 J2       # PIO3_28
 # set_io gpio_27 H1       # PIO3_27
+# set_io gpio_28 J2       # PIO3_28
 
 ## ---------- Enable pull up on a GPIO pin for push buttons
 # set_io -pullup yes gpio_00 E4       # PIO3_00
