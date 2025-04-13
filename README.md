@@ -127,8 +127,8 @@ The repository contains the following examples
 | Folder | Description |
 | :-- |:-- |
 | led_blink | sequentially blink LED1 and LED2 on the board. |
-| vga_demo1 | displays a small dot on the centre of the screen. |
-| led_blinking | sequentially blink 8 LEDs on the PMODs. |
+| counter | sequentially blink 8 LEDs on the PMODs. |
+<!-- | vga_demo1 | displays a small dot on the centre of the screen. | -->
 
 To run any of the demos mentioned above move into the particular project directory and run the
 Makefile targets.
@@ -145,3 +145,7 @@ Makefile targets.
 <!-- - [2](https://hedmen.org/icestorm-doc/icestorm.html#Pin-mappings) -->
 <!-- - [3](https://ihateyour.cloud/post/20200604-1.html) -->
 <!-- - [4](https://bitbucket.org/cocoacrumbselectronics/ice40hx1k-evb-demo/src/master/) -->
+<!-- - [5](https://github.com/Dreadrik/fpga-stopwatch) -->
+<!-- - [6](https://gist.github.com/Forty-Bot/ea32c43c0e451ffe0eb155cc14305947) -->
+<!-- - [7](https://github.com/hdl/constraints/blob/main/board/iCE40-HX8K/constraints.pcf) -->
+https://github.com/YosysHQ/nextpnr-bench/blob/master/ice40/design02-hx8k.pcf
